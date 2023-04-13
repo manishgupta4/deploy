@@ -1,6 +1,6 @@
 import React from 'react'
 import './sidebar.css'
-// import emailjs from '@emailjs/browser';
+import emailjs from '@emailjs/browser';
 import {
   CDBSidebar,
   CDBSidebarContent,
@@ -33,20 +33,19 @@ const Sidebar = () => {
   }
 
 
-  // function sendEmail(){
-  //   const templateParams = {
-  //     name: 'James',
-  //     notes: 'Check this out!'
-  // };
+  function sendEmail(){
+    const templateParams = {
+      name: 'James'
+  };
 
-  //   emailjs.send('service_fbx8sxb', 'template_ffn3ott',templateParams,'8xMec99qaoKFXb8NO')
-  //     .then((response) => {
-  //     console.log('SUCCESS!', response.status, response.text);
-  //   }, (error) => {
-  //     console.log('FAILED...', error);
-  //   });
+    emailjs.send('service_fbx8sxb', 'template_ffn3ott',templateParams,'8xMec99qaoKFXb8NO')
+      .then((response) => {
+      console.log('SUCCESS!', response.status, response.text);
+    }, (error) => {
+      console.log('FAILED...', error);
+    });
        
-  // };
+  };
   
 
 
