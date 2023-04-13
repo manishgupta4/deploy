@@ -1,0 +1,32 @@
+/* .sidebar{
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+} */
+.sc{
+  height:100%;
+}
+.vc{
+  height:30%;
+  padding:5px;
+}
+.gc{
+  height:70%;
+}
+.visual{
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.graph{
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  
+}
+.alert{
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+
+}
+.alert{
+  font-size: 12px;
+}
+h1{
+    color: black;
+    text-align: center;
+    text-decoration: underline;
+}

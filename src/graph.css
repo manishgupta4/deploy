@@ -1,0 +1,22 @@
+ /* .container { */
+    /* width: 60%; */
+    /* height: auto; */
+    /* justify-content: space-evenly; */
+    /* position:relative; */
+/* }  */
+  .chart-heading{
+    color: black;
+    text-align: center;
+    text-decoration: underline;
+  }
+  
+  /* .linechart{
+    padding: 5% 0%;
+  }
+  .barchart{
+    padding: 5% 0%;
+  }
+  .areachart{
+    padding: 5% 0%;
+  } */
+  
