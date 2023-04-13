@@ -1,4 +1,6 @@
 import React from 'react'
+import './sidebar.css'
+// import emailjs from '@emailjs/browser';
 import {
   CDBSidebar,
   CDBSidebarContent,
@@ -29,7 +31,24 @@ const Sidebar = () => {
     ])
     console.log(alerts)
   }
+
+
+  // function sendEmail(){
+  //   const templateParams = {
+  //     name: 'James',
+  //     notes: 'Check this out!'
+  // };
+
+  //   emailjs.send('service_fbx8sxb', 'template_ffn3ott',templateParams,'8xMec99qaoKFXb8NO')
+  //     .then((response) => {
+  //     console.log('SUCCESS!', response.status, response.text);
+  //   }, (error) => {
+  //     console.log('FAILED...', error);
+  //   });
+       
+  // };
   
+
 
   const [count,setData] = useState(0);
   useEffect(() => {
@@ -38,7 +57,7 @@ const Sidebar = () => {
           setData(count+1);
           if(data[count+1].temp>14) {
             showAlert("Temperature is greater than 14","danger",data[count].time,data[count].id);
-            
+            // sendEmail();
           }
           else {
             if(data[count+1].temp>10.5 && data[count+1].temp<14) {
@@ -64,7 +83,7 @@ const Sidebar = () => {
     // setalert([...alerts.slice(0,id), ...alerts.slice(id+1)])
    }
   return (
-    <div style={{ display: 'flex', height: '100%', overflow: 'scroll initial' }}>
+    <div style={{ display: 'flex',  overflow: 'scroll initial' }}>
       <CDBSidebar textColor="#fff" backgroundColor="#333" style={{ position: 'static', height:'100vh' }}>
         <CDBSidebarHeader prefix={<i className="fa fa-bars fa-large"></i>}>
           <a href="/" className="text-decoration-none" style={{ color: 'inherit' }}>
@@ -99,11 +118,11 @@ const Sidebar = () => {
           </div>
         </div>
         <div className="row gc">
-          <div className="graph col-sm-10 col-md-9 col-lg-9 col-xl-9 my-1 ">
+          <div className="graph col-sm-12 col-md-9 col-lg-9 col-xl-9 ">
               <Graph/>
           </div>
-          <div className="alert col-sm-10 col-md-3 col-lg-3 col-xl-3 my-1">
-            <h1>Alert</h1>
+          <div className="alert1 col-sm-12 col-md-3 col-lg-3 col-xl-3 ">
+            <h1 className="he">Alert</h1>
           {alerts.slice(0,4).map((alert,id)=>{
                 return <div className="Alert">
                 <div className={`alert alert-${alert.type} alert-dismissible fade show w-100`} role="alert">

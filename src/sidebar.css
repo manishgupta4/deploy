@@ -1,0 +1,28 @@
+.vc{
+    padding:10px;
+    margin-top:5px;
+  }
+  .gc{
+    padding:10px;
+    margin-top:5px;
+    margin-right: 5px;
+  }
+  .visual{
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  }
+  .graph{
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    
+  }
+  .alert1{
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  
+  }
+  .alert{
+    font-size: 12px;
+  }
+  .he{
+      color: black;
+      text-align: center;
+      text-decoration: underline;
+  }

@@ -13,18 +13,21 @@ img{
     text-align:center;
     border-radius: 10px;
     box-shadow: rgb(164, 170, 177) 0px 10px 20px 5px;
-    padding:8px;
+    padding:5px;
     margin:px;
   }
   .temp:hover{
-    background-color: #198754 ;
+    background-color:#333;
     box-shadow: rgba(0, 0, 0, 0.4) 0px 30px 90px;
+    color:white;
   }
   .down{
     font-size: 20px !important;
   
   }
   .hdg{
-    font-size:28px;
+    font-size:30px;
+    padding: 2px;
   }
+  
   
