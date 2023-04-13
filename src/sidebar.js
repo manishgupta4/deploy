@@ -99,10 +99,10 @@ const Sidebar = () => {
           </div>
         </div>
         <div className="row gc">
-          <div className="graph col-sm-9 ">
+          <div className="graph col-sm-10 col-md-9 col-lg-9 col-xl-9 my-1 ">
               <Graph/>
           </div>
-          <div className="alert col-sm-3">
+          <div className="alert col-sm-10 col-md-3 col-lg-3 col-xl-3 my-1">
             <h1>Alert</h1>
           {alerts.slice(0,4).map((alert,id)=>{
                 return <div className="Alert">

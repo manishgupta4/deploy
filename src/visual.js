@@ -50,25 +50,25 @@ function Visual({count}) {
      return (
        //<div className="d-flex justify-content-center w-100">
         <div className="w-100 row my-3 d-flex justify-content-center">
-        <div className='temp col-sm-10 col-md-4 col-lg-4 col-xl-3 my-1'>
+        <div className='temp col-sm-10 col-md-5 col-lg-5 col-xl-3 my-1'>
           <Dropdown/>
           <img className='image' src={Temperature}></img>
           <h1 className='hdg'>{data[Math.floor(count)].temp}</h1>
           <h2 className="down">Temperature</h2>
         </div>
-        <div className='temp col-sm-10 col-md-4 col-lg-4 col-xl-3 my-1  '>
+        <div className='temp col-sm-10 col-md-5 col-lg-5 col-xl-3 my-1  '>
             <Dropdown/>
             <img className='image'src={humidity}></img>
             <h1 className='hdg'>{data[Math.floor(count)].humi}</h1>
             <h2 className="down">Humidity</h2>
         </div>
-            <div className='temp col-sm-10 col-md-4 col-lg-4 col-xl-3 my-1 '>
+            <div className='temp col-sm-10 col-md-5 col-lg-5 col-xl-3 my-1 '>
             <Dropdown/>
             <img className='image'src={CO2}></img>
             <h1 className='hdg'>{data[Math.floor(count)].CO2}</h1>
             <h2 className="down">CO2</h2>
         </div>
-            <div className='temp col-sm-10 col-md-4 col-lg-4 col-xl-3 my-1 '>
+            <div className='temp col-sm-10 col-md-5 col-lg-5 col-xl-3 my-1 '>
             <Dropdown/>
             <img className='image' src={VOC}></img>
             <h1 className='hdg'>{data[Math.floor(count)].VOC}</h1>
