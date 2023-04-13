@@ -1,10 +1,5 @@
 import './App.css';
 import Sidebar from './sidebar.js';
-import Visual from './visual.js';
-import Graph from './graph.js';
-import Alert from './alert.js';
-import { useEffect, useState } from "react";
-let { data } = require("./Database.json")
 function App() {
   
   //  useEffect(()=>{

@@ -30,36 +30,6 @@ const Sidebar = () => {
     console.log(alerts)
   }
   
-  const sendAlert = () => {
-    const email = 'manishumeshgupta130@gmail.com';
-    const subject = 'Data Out of Bounds Alert!';
-    const body = `The data value is out of bounds! Current value: ${data[count+1].temp}`;
-  
-    fetch(`https://api.sendgrid.com/v3/mail/send`, {
-      method: 'POST',
-      headers: {
-        'Content-Type': 'application/json',
-        Authorization: `Bearer ${process.env.SENDGRID_API_KEY}`,
-      },
-      body: JSON.stringify({
-        personalizations: [
-          {
-            to: [{ email }],
-            subject,
-          },
-        ],
-        from: { email: 'manishumeshgupta3@gmail.com' },
-        content: [{ type: 'text/plain', value: body }],
-      }),
-    })
-      .then((response) => {
-        console.log('Alert email sent successfully!');
-      })
-      .catch((error) => {
-        console.error('Error sending alert email:', error);
-      });
-  };
-  
 
   const [count,setData] = useState(0);
   useEffect(() => {
@@ -68,12 +38,11 @@ const Sidebar = () => {
           setData(count+1);
           if(data[count+1].temp>14) {
             showAlert("Temperature is greater than 14","danger",data[count].time,data[count].id);
-            sendAlert();
+            
           }
           else {
             if(data[count+1].temp>10.5 && data[count+1].temp<14) {
               showAlert("Temperature is greater than 10","warning",data[count].time,data[count].id);
-              sendAlert();
             }
           }
           console.log('alerts', alerts)

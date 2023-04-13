@@ -4,7 +4,6 @@ import VOC from "./VOC.png";
 import humidity from "./humidity.png";
 import CO2 from "./CO2.png"
 import Dropdown from './dropdown.js';
-import { useEffect, useState } from "react";
 // import Alert from './alert';
 let { data } = require("./Database.json")
 function Visual({count}) {
