@@ -209,21 +209,21 @@ function Graph() {
  </div>
  {/* below code is for daily weekly monthly buttons till div is closed */}
  <div className='row ps-3 ms-3'>
- <div className='btn-group mx-1 my-1 col-sm-8 col-lg-5 px-0' role="group" aria-label="Basic example">
+ <div className='btn-group mx-1 my-1 col-sm-8 col-lg-5 col-xl-5 px-0' role="group" aria-label="Basic example">
  <button type="button" class="btn btn-outline-success " value={10} onClick={onChangeNumber}>Daily</button>
  <button type="button" class="btn btn-outline-success " value={30} onClick={onChangeNumber}>Weekly</button>
  <button type="button" class="btn btn-outline-success " value={50} onClick={onChangeNumber}>Monthly</button>
  <button type="button" class="btn btn-outline-success " value={100} onClick={onChangeNumber}>Quarterly</button>
  </div>
  
- <div className='btn-group mx-1 my-1 col-sm-8 col-lg-5 px-0' role="group" aria-label="Basic example">
+ <div className='btn-group mx-1 my-1 col-sm-8 col-lg-5 col-xl-5 px-0' role="group" aria-label="Basic example">
  <button type="button" class="btn btn-outline-success" onClick={OnClickChart} value='Line'>Line Chart</button>
  <button type="button" class="btn btn-outline-success" onClick={OnClickChart} value='Bar'>Bar Chart</button>
  <button type="button" class="btn btn-outline-success" onClick={OnClickChart} value='Area'>Area Chart</button>
  </div>
 
  {/* <button class="btn btn-outline-success mx-3" type="button" data-bs-toggle="dropdown" aria-expanded="false"> */}
- <select class="btn btn-outline-success mx-1 my-1 col-sm-8 col-lg-1 px-0" aria-label="Default select example" onChange={onChangeData}>
+ <select class="btn btn-outline-success mx-1 my-1 col-sm-8 col-lg-1 col-xl-1 px-0" aria-label="Default select example" onChange={onChangeData}>
  <option value='temp'selected>Temperature</option>
  <option value="humi">Humidity</option>
  <option value="voc">VOC</option>
