@@ -98,7 +98,8 @@ function Graph() {
  <div className='container w-100'> 
  <div className='linechart w-100 h-auto'>
  <h1 className='chart-heading'>Line Chart</h1>
- <ResponsiveContainer width="100%" aspect={2.5} minWidth={100}>
+ {console.log(window.innerWidth)}
+ <ResponsiveContainer width="100%" aspect={window.innerWidth < 900 ? 1.5 : 2.5} minWidth={100}>
  <LineChart
  width='100%'
  height={300}
