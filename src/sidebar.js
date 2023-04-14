@@ -110,7 +110,7 @@ const Sidebar = () => {
           </div>
         </CDBSidebarFooter>
       </CDBSidebar>
-      <div className="container">
+      <div className="container" style={{height:'100vh',scrollbarWidth:'none', overflow:'scroll'}}>
         <div className="row vc">
           <div className="visual">
             <Visual count={count} />
