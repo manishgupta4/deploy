@@ -35,7 +35,7 @@ const Sidebar = () => {
 
   function sendEmail(){
     const templateParams = {
-      name: 'James'
+      name: 'QTS'
   };
 
     emailjs.send('service_fbx8sxb', 'template_ffn3ott',templateParams,'8xMec99qaoKFXb8NO')
@@ -56,7 +56,7 @@ const Sidebar = () => {
           setData(count+1);
           if(data[count+1].temp>14) {
             showAlert("Temperature is greater than 14","danger",data[count].time,data[count].id);
-            // sendEmail();
+           // sendEmail();
           }
           else {
             if(data[count+1].temp>10.5 && data[count+1].temp<14) {
@@ -83,7 +83,7 @@ const Sidebar = () => {
    }
   return (
     <div style={{ display: 'flex',  overflow: 'scroll initial' }}>
-      <CDBSidebar textColor="#fff" backgroundColor="#333" style={{ position: 'static', height:'100vh' }}>
+      <CDBSidebar textColor="#fff" backgroundColor="#333" style={{ position: 'static',height:'100vh' }}>
         <CDBSidebarHeader prefix={<i className="fa fa-bars fa-large"></i>}>
           <a href="/" className="text-decoration-none" style={{ color: 'inherit' }}>
             QTS Dashboard
@@ -92,7 +92,7 @@ const Sidebar = () => {
         <CDBSidebarContent className="sidebar-content">
           <CDBSidebarMenu>
             <CDBSidebarMenuItem icon="columns">Home</CDBSidebarMenuItem>
-            <CDBSidebarMenuItem icon="table">News</CDBSidebarMenuItem>
+            <CDBSidebarMenuItem icon="table">Tracking</CDBSidebarMenuItem>
             <CDBSidebarMenuItem icon="pen">Contact</CDBSidebarMenuItem>
             <CDBSidebarMenuItem icon="images">About</CDBSidebarMenuItem>
           </CDBSidebarMenu>
