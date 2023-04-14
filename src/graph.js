@@ -129,7 +129,7 @@ function Graph() {
  
  <div className='barchart w-100 h-auto' hidden>
  <h1 className='chart-heading'>Stacked Bar Chart</h1>
- <ResponsiveContainer width='100%' aspect={2.5}>
+ <ResponsiveContainer width='100%' aspect={(window.innerWidth < 900) ? ((window.innerWidth) < 400 ? 1 : 1.5) : 2.5}>
  <BarChart
  // width={'100%'}
  // height={400}
@@ -155,7 +155,7 @@ function Graph() {
  </div>
  <div className='areachart w-100 h-auto' hidden>
  <h1 className='chart-heading'>Stacked Area Chart</h1>
- <ResponsiveContainer width="100%" aspect={2.5}>
+ <ResponsiveContainer width="100%" aspect={(window.innerWidth < 900) ? ((window.innerWidth) < 400 ? 1 : 1.5) : 2.5}>
  {/* <AreaChart
  width={1000}
  height={400}
