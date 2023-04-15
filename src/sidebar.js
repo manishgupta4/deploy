@@ -56,7 +56,7 @@ const Sidebar = () => {
           setData(count+1);
           if(data[count+1].temp>14) {
             showAlert("Temperature is greater than 14","danger",data[count].time,data[count].id);
-           // sendEmail();
+            // sendEmail();
           }
           else {
             if(data[count+1].temp>10.5 && data[count+1].temp<14) {
@@ -93,8 +93,8 @@ const Sidebar = () => {
           <CDBSidebarMenu>
             <CDBSidebarMenuItem icon="columns">Home</CDBSidebarMenuItem>
             <CDBSidebarMenuItem icon="table">Tracking</CDBSidebarMenuItem>
-            <CDBSidebarMenuItem icon="pen">Contact</CDBSidebarMenuItem>
-            <CDBSidebarMenuItem icon="images">About</CDBSidebarMenuItem>
+            <CDBSidebarMenuItem icon="pen">Alert</CDBSidebarMenuItem>
+            <CDBSidebarMenuItem icon="images">Visuals</CDBSidebarMenuItem>
           </CDBSidebarMenu>
         </CDBSidebarContent>
 
